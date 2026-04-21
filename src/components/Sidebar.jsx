@@ -11,7 +11,7 @@ function Sidebar() {
   // ];
 
   const knowledgeList = [
-    'Python', 'Go Lang', 'JavaScript', 'C#', 'DevOps', 'Node Js', 'Fast API', 'React', 'Docker', 'Git', 'AWS', 'Selenium', 'Testing', 'Postman', 'HTML5', 'CSS', 'Tailwind'
+    'Python', 'Go Lang', 'JavaScript', 'C#', 'DevOps', 'Node Js', 'Fast API', 'React', 'Docker', 'Git', 'AWS', 'Selenium', 'Testing', 'Postman', 'HTML5', 'CSS', 'Tailwind', 'MySQL', 'PostgreSQL', 'MongoDB', 'Firebase', 'Linux', 'Agile Methodologies', 'Scrum', 'CI/CD'
   ];
 
   return (
