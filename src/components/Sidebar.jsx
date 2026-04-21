@@ -11,7 +11,7 @@ function Sidebar() {
   // ];
 
   const knowledgeList = [
-    'Python', 'Go Lang', 'JavaScript', 'C#', 'DevOps', 'Node Js', 'Fast API', 'React', 'Docker', 'Git', 'AWS', 'Selenium', 'Testing', 'Postman', 'HTML5', 'CSS', 'Tailwind', 'MySQL', 'PostgreSQL', 'MongoDB', 'Firebase', 'Linux', 'Agile Methodologies', 'Scrum', 'CI/CD', 'Microservices', 'RESTful APIs', 'GraphQL', 'Cloud Computing', 'Serverless Architecture', 'Unit Testing', 'Integration Testing', 'Performance Optimization', 'Code Review', 'Version Control (Git)', 'Continuous Integration/Continuous Deployment (CI/CD)', 'Containerization (Docker)', 'Orchestration (Kubernetes)', 'Monitoring and Logging', 'Security Best Practices', 'Agile Methodologies (Scrum, Kanban)', 'Project Management Tools (Jira, Trello)', 'Collaboration Tools (Slack, Microsoft Teams)', 'Problem-Solving Skills', 'Communication Skills'
+    'Python', 'Go Lang', 'JavaScript', 'C#', 'DevOps', 'Node Js', 'Fast API', 'React', 'Docker', 'AWS', 'Selenium', 'MySQL', 'PostgreSQL', 'MongoDB', 'Firebase', 'Linux', 'Agile Methodologies', 'Scrum', 'CI/CD', 'Microservices', 'RESTful APIs', 'GraphQL', 'Cloud Computing', 'Serverless Architecture', 'Unit Testing', 'Performance Optimization', 'Version Control (Git)', 'Continuous Integration/Continuous Deployment (CI/CD)', 'Containerization (Docker)', 'Orchestration (Kubernetes)',
   ];
 
   return (
