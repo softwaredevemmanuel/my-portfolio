@@ -2,7 +2,7 @@ name: 🚀 Deploy React App to cPanel
 
 on:
   push:
-    branches: [ main ]  # Triggers the action when you push to the 'main' branch
+    branches: [ master ]  # Triggers the action when you push to the 'main' branch
 
 jobs:
   deploy:
