@@ -1,0 +1,118 @@
+import React from 'react';
+import './Sidebar.css';
+import profile from '../assets/48366297.jpeg';
+
+function Sidebar() {
+  const skills = [
+    { name: 'Python', value: 90 },
+    { name: 'Django', value: 85 },
+    { name: 'JavaScript', value: 88 },
+    { name: 'React', value: 85 },
+    { name: 'DevOps', value: 75 },
+    { name: 'React Native', value: 80 }
+  ];
+
+  const knowledgeList = [
+    'AWS', 'Selenium Automation', 'Testing', 'GIT knowledge',
+    'Docker', 'Postman', 'HTML5', 'CSS', 'Tailwind'
+  ];
+
+  return (
+    <div className="art-info-bar">
+      <div className="art-info-bar-frame">
+        <div className="art-info-bar-header">
+          <div className="art-info-bar-btn">
+            <i className="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+
+        <div className="art-header">
+          <div className="art-avatar">
+            <a href="img/face-11.JPG" className="art-avatar-curtain">
+              <img src= {profile} alt="avatar" />
+              <i className="fas fa-expand"></i>
+            </a>
+            <div className="art-lamp-light">
+              <div className="art-available-lamp"></div>
+            </div>
+          </div>
+          <h5 className="art-name mb-10">
+            <a href="index.html">Okereke Emmanuel</a>
+          </h5>
+          <div className="art-sm-text">
+            Software Engineer <br />Ehizua Hub Nigeria
+          </div>
+        </div>
+
+        <div id="scrollbar2" className="art-scroll-frame">
+          <div className="art-table p-15-15 shadow-lg">
+            <ul>
+              <li><h6>Country:</h6><span>Nigeria</span></li>
+              <li><h6>City:</h6><span>Lagos</span></li>
+              <li><h6>Working:</h6><span>Remotely</span><br /><span>Onsite</span></li>
+            </ul>
+          </div>
+
+          <div className="art-ls-divider shadow-lg"></div>
+
+          <div>
+            <h5 className="text-center p-2">Major Skills</h5>
+          </div>
+          
+          <div className="art-lang-skills p-30-15">
+            {skills.map((skill, index) => (
+              <div key={index} className="art-lang-skills-item">
+                <div className="progress-circle" data-value={skill.value}>
+                  <div className="progress-ring">
+                    <svg width="80" height="80">
+                      <circle cx="40" cy="40" r="35" fill="none" stroke="#e0e0e0" strokeWidth="4"/>
+                      <circle 
+                        cx="40" cy="40" r="35" fill="none" 
+                        stroke="#007bff" strokeWidth="4"
+                        strokeDasharray={`${2 * Math.PI * 35 * skill.value / 100} ${2 * Math.PI * 35}`}
+                        strokeDashoffset={2 * Math.PI * 35 * 0.25}
+                        transform="rotate(-90 40 40)"
+                      />
+                    </svg>
+                    <span className="progress-value">{skill.value}%</span>
+                  </div>
+                </div>
+                <h6>{skill.name}</h6>
+              </div>
+            ))}
+          </div>
+
+          <div className="art-ls-divider"></div>
+
+          <ul className="art-knowledge-list p-15-0">
+            {knowledgeList.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <div className="art-ls-divider"></div>
+
+          <div className="art-links-frame p-15-15">
+            <a href="" className="art-link" download>
+              Download cv <i className="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+
+        <div className="art-ls-social">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Sidebar;

@@ -1,0 +1,82 @@
+.art-banner {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.art-banner-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.art-banner-title h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.art-banner-title h1 span {
+  color: #007bff;
+}
+
+.art-lg-text {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.art-code {
+  font-family: 'Courier New', monospace;
+}
+
+.art-code i {
+  color: #ff6b6b;
+}
+
+.txt-rotate {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.art-buttons-frame {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.art-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.art-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.art-btn-md {
+  padding: 10px 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .art-banner-title h1 {
+    font-size: 40px;
+  }
+  
+  .art-lg-text {
+    font-size: 18px;
+  }
+}

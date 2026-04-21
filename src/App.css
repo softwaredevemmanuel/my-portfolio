@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Add these styles to your App.css */
+.art-app-container {
   display: flex;
-  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 60px); /* Subtract header height */
+}
+
+/* Adjust Sidebar position to account for header */
+.art-info-bar {
+  position: fixed;
+  left: 0;
+  top: 60px; /* Match header height */
+  width: 320px;
+  height: calc(100vh - 60px); /* Subtract header height */
+  background: #1a1a24;
+  z-index: 90; /* Lower than header */
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+/* Adjust main content position */
+.art-content {
+  flex: 1;
+  margin-left: 320px;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+/* Header styles - make sure it stays on top */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #e9ecef;
+  height: 60px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 992px) {
+  .art-info-bar {
+    transform: translateX(-100%);
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+  
+  .art-info-bar.active {
+    transform: translateX(0);
+  }
+  
+  .art-content {
+    margin-left: 0;
+  }
+  
+  .art-app-container {
+    margin-top: 60px;
+  }
+}
+
+/* Ensure sidebar toggle button is positioned correctly */
+.sidebar-toggle {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  z-index: 95;
+  background: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 992px) {
+  .sidebar-toggle {
+    display: block;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Adjust scroll frames */
+.art-scroll-frame {
+  position: relative;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Optional: Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Adjust top background position */
+.art-top-bg {
+  position: fixed;
+  top: 60px; /* Below header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

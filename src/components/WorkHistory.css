@@ -1,0 +1,58 @@
+.art-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.art-timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.art-timeline-mark-light {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 123, 255, 0.2);
+  border-radius: 50%;
+}
+
+.art-timeline-mark {
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #007bff;
+  border-radius: 50%;
+}
+
+.art-timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.art-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.art-left-side h5 {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.art-date {
+  color: #888;
+  font-size: 14px;
+}
+
+.art-timeline-content p {
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+}

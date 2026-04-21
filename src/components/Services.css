@@ -1,0 +1,51 @@
+.art-section-title {
+  margin-bottom: 40px;
+}
+
+.art-title-frame h4 {
+  color: #fff;
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.art-title-frame h4:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+}
+
+.art-service-icon-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.art-service-icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.art-service-ib-content h5 {
+  color: #007bff;
+  font-size: 20px;
+}
+
+.art-service-ib-content div {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.head {
+  margin-bottom: 15px;
+}
+

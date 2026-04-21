@@ -1,0 +1,36 @@
+.art-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #150664;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art-preloader-content {
+  text-align: center;
+}
+
+.art-preloader-content h4 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.art-preloader-load {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #007bff;
+  transition: width 0.1s linear;
+}

@@ -1,0 +1,151 @@
+/* Manual Carousel Styles */
+.manual-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.carousel-nav {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.carousel-nav:hover {
+  background: #007bff;
+}
+
+.carousel-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide-group {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+}
+
+.carousel-slide {
+  flex: 1;
+  min-width: 0; /* Prevents overflow */
+}
+
+
+
+@media (max-width: 450px) {
+ .carousel-nav {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: #007bff;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.art-testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  /* height: 100%; */
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.art-testimonial:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.art-testimonial-face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.testimonial-body {
+  flex: 1;
+}
+
+.testimonial-body h5 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.art-el-suptitle {
+  color: #888;
+  font-size: 14px;
+}
+
+.testimonial-body .mb-15 {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.art-star-rate {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+  margin: 0;
+}
+
+.art-star-rate li {
+  color: #ffc107;
+  font-size: 14px;
+}
+
+.art-star-rate .art-empty-item {
+  color: #444;
+}
+
+.art-testimonial-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
