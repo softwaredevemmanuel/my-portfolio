@@ -1,4 +1,3 @@
-import React from 'react';
 import './Services.css';
 
 function Services() {
@@ -29,7 +28,7 @@ function Services() {
         </div>
         
         {services.map((service, index) => (
-          <div key={index} className="col-lg-4 col-md-6 col-sm-12">
+          <div key={index} className="col-lg-4 col-md-6">
             <div className="art-a art-service-icon-box">
               <div className="art-service-ib-content">
                 <h5 className="mb-15 head">{service.title}</h5>

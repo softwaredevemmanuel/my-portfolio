@@ -62,7 +62,7 @@ function Banner() {
                 <span className="txt-rotate" ref={textRef}></span>&lt;/<i>code</i>&gt;
               </div>
               <div className="art-buttons-frame">
-                <a href="img/RESUME.pdf" className="art-btn art-btn-md" target="_blank" rel="noopener noreferrer">
+                <a href="/RESUME.pdf" className="art-btn art-btn-md" target="_blank" rel="noopener noreferrer">
                   <span>View My CV</span>
                 </a>
                 <a href="https://github.com/softwaredevemmanuel" className="art-btn art-btn-md mb-3" target="_blank" rel="noopener noreferrer">

@@ -1,7 +1,7 @@
 /* Portfolio Banner */
 .portfolio-banner {
   min-height: 400px !important;
-  background: linear-gradient(135deg, #150664 0%, #2a0a8a 100%);
+  background: linear-gradient(135deg, #ab9eec 0%, #2a0a8a 100%);
   border-radius: 20px;
   margin-bottom: 40px;
 }

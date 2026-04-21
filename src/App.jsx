@@ -39,7 +39,7 @@ function App() {
               <Route path="/" element={
                 <div className="art-content">
                   <div className="art-curtain"></div>
-                  <div className="art-top-bg" style={{ backgroundColor: '#150664' }}>
+                  <div className="art-top-bg" style={{ backgroundColor: '#a19db4' }}>
                     <div className="art-top-bg-overlay"></div>
                   </div>
                   <div className="transition-fade" id="swup">

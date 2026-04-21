@@ -6,18 +6,7 @@
   min-height: calc(100vh - 60px); /* Subtract header height */
 }
 
-/* Adjust Sidebar position to account for header */
-.art-info-bar {
-  position: fixed;
-  left: 0;
-  top: 60px; /* Match header height */
-  width: 320px;
-  height: calc(100vh - 60px); /* Subtract header height */
-  background: #1a1a24;
-  z-index: 90; /* Lower than header */
-  overflow-y: auto;
-  transition: all 0.3s ease;
-}
+
 
 /* Adjust main content position */
 .art-content {
@@ -90,6 +79,7 @@
   height: calc(100vh - 80px);
   overflow-y: auto;
   overflow-x: hidden;
+  
 }
 
 /* Optional: Add smooth scrolling */
