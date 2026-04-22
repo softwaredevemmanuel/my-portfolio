@@ -33,3 +33,4 @@ jobs:
           local-dir: ./build/ 
           server-dir: ./
           git-ftp-args: --insecure # Optional: Use if you have SSL issues with the FTP server
+          dangerous-clean-slate: true   # ← This removes old files before uploading
